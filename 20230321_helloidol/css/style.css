@@ -1,3 +1,55 @@
 body {
     background-color: beige;
 }
+/* h1의 자매인 모든 h2에 plum 배경색 */
+h1 ~ h2 {
+    background-color: plum;
+}
+/* h1의 자매 중 첫번재 h2만 plum 배경색 */
+h1 + h2 {
+    background-color: plum;
+}
+
+/* h1과 h2는 plum 배경색 */
+h1,
+h2 {
+    background-color: plum;
+}
+h5 ~ h6,
+ol,
+ul {
+    color: #333;
+    font-size: 32px;
+}
+.korea {
+    color: skyblue;
+}
+.jepan {
+    color: rgba(177, 25, 76, 0.845);
+}
+.incheon {
+    color: darkblue;    /*맨 마지막에 적용되서 가을은 darkblue 색깔로 변함*/
+}
+.leader {
+    color: purple;
+}
+li:nth-child(5) {         /*li의 5번째 자식*/
+    text-decoration: underline;
+}
+li:nth-child(even) {      /* odd: 홀수, even: 짝수 */
+    background-color: #eee;
+}
+li:nth-child(5n) {
+    background-color: #aaa;
+}
+[type="text"] {
+    background-color: aqua;
+}
+ul:nth-child(3) > li:nth-child(2):hover {
+    text-decoration: overline;
+}
+body > div:nth-child(8) > ul:nth-child(3) > li:nth-child(2) {
+    font-size: 8px;
+}
+
+
