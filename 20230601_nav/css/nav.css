@@ -1,0 +1,58 @@
+/* Variables CSS */
+:root {
+    --first-color: #008156;
+    --second-color: #efb11c;
+    --body-color: #fff;
+
+    /* font */
+    --body-font: 'Hahmlet', serif;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+    --font-thin: 200;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;400;700&display=swap');
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: #000;
+}
+header {
+    background-color: var(--first-color);
+    position: fixed;    /* 스크롤 해도 항상 위치 고정하자 */
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav {
+    height: 44px;
+}
+.nav.container {
+    display: flex;  /* 기본값: 수평정렬 */
+    justify-content: space-between;
+    align-items: center;    /* 교차축 가운데 및 정렬 */
+    padding: 0 16px;
+    color: #fff;
+}
+.nav.container a {
+    color: #fff;
+}
+.nav-logo {
+    font-size: var(--h2-font-size);
+}
+.nav-list {
+    display: flex;
+    column-gap: 80px;
+    font-weight: var(--font-bold);
+}
+.nav-toggle {
+    font-size: var(--h2-font-size);
+    visibility: hidden;
+}
