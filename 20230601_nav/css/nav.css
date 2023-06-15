@@ -80,6 +80,7 @@ nav {
         background-color: rgba(239, 177, 28, 0.4);
         backdrop-filter: blur(4px);
         height: 0;  /* 처음에 안 보이게 */
+        transition: all 1s;
     }
     .nav-link {
         display: block; /* 링크를 양옆으로 넓게 */
