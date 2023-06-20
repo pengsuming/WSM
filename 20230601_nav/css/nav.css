@@ -80,7 +80,8 @@ nav {
         background-color: rgba(239, 177, 28, 0.4);
         backdrop-filter: blur(4px);
         height: 0;  /* 처음에 안 보이게 */
-        transition: all 1s;
+        transition: all 0.4s;
+        overflow: hidden; /* height: 0인데도 내용이 넘치면 안 보이게 */
     }
     .nav-link {
         display: block; /* 링크를 양옆으로 넓게 */
@@ -93,13 +94,14 @@ nav {
     .nav-toggle {
         visibility: visible;
         position: absolute; /* 햄버거 메뉴 공간을 차지하지 않게 .nav-logo를 가운데 */
-        right: 16px;    /* 햄버거 메뉴 원위치 */
+        right: 16px;        /* 햄버거 메뉴 원위치 */
+        cursor: pointer;    /* 손가락 */
     }
 
     /* .show-menu하면, .nav-list 보이게 */
     /* .show-menu하면, .nav-toggle의 모양 X자로 */
     .show-menu {
-        height: 171px;
+        height: 170px;
     }
 
 }
