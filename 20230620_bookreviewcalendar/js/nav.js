@@ -1,8 +1,8 @@
 const navToggleI = nav_toggle.getElementsByTagName("i")[0];
 const navListUl = document.getElementsByClassName("nav-list")[0];
 
-console.log(navToggleI);
-console.log(navListUl);
+// console.log(navToggleI);
+// console.log(navListUl);
 
 // .nav-toggle 클릭하면
 nav_toggle.onclick = () => {
