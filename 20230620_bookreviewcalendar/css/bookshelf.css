@@ -1,0 +1,23 @@
+.bookshelf {
+    margin-top: calc(44px + 100px); /* 연산자는 양 옆에 띄어쓰기 해야 함! */
+    display: flex;  /* 수평 배열 */
+    gap: 80px;  /* column-gap: 80px; row-gap: 80px; */
+    flex-wrap: wrap;    /* 길면 내려쓰자 */
+    justify-content: center;    /* 메인축(수평) 가운데로 */
+}
+.row-container {
+    display: flex;  /* 수평 배열 */
+    column-gap: 80px;
+    align-items: flex-end;  /* 교차축 밑에 정렬하자 */
+}
+
+
+.book-item > img {
+    width: 150px;
+    box-shadow: 0 16px 32px #dddddd;
+    transition: all 0.2s;
+}
+.book-item > img:hover {
+    transform: translateY(-40px);
+    box-shadow: 0 24px 48px #e1e1e1;
+}
