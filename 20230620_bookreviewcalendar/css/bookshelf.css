@@ -4,6 +4,9 @@
     gap: 80px;  /* column-gap: 80px; row-gap: 80px; */
     flex-wrap: wrap;    /* 길면 내려쓰자 */
     justify-content: center;    /* 메인축(수평) 가운데로 */
+    max-width: calc(150px * 4 + 80px * 3);  /* 한줄에 최대 2개의 row-container, 4개의 book-item */
+    margin-left: auto;  /* 좁아진 bookshelf 자체를 가운데로 */
+    margin-right: auto; /* 좁아진 bookshelf 자체를 가운데로 */
 }
 .row-container {
     display: flex;  /* 수평 배열 */
