@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 main {
     margin-top: calc(44px + 100px);
 }
@@ -12,10 +13,25 @@ main {
     flex-wrap: wrap;
 }
 
+=======
+
+main {
+    margin-top: calc(44px + 100px);
+}
+.container{
+    display:flex;
+}
+
+.info-groups{
+    border: 2px solid blue;
+    flex-wrap: wrap;
+}
+>>>>>>> 4a6b4949b3b828faab37f1b9cc286bcfe60656c3
 .info,
 .review {
     flex-direction: column;
 }
+<<<<<<< HEAD
 .info-group {
     flex-direction: column;
 }
@@ -40,10 +56,40 @@ main {
         margin-top: calc(40px + 40px);
     }
     .image-info-groups {
+=======
+.review{
+    flex-direction: column;
+}
+.info-group {
+    flex-direction: column;
+}
+.reviews{
+    flex-direction: column;
+}
+.book-image{
+    width:200px;
+    height:400px;
+    background-color: steelblue;
+}
+.info {
+    width:300px;
+    height:100px;
+}
+.review{
+    height:150px;
+}
+
+@media screen and (max-width:540px){ /*540px 이하의 너비 이하면 아래 스타일 적용*/
+    main{
+        margin-top: calc(44px + 40px);
+    }
+    .image-info-groups{
+>>>>>>> 4a6b4949b3b828faab37f1b9cc286bcfe60656c3
         flex-direction: column;
     }
 }
 
+<<<<<<< HEAD
 /* delete me */
 main div {
     border: 2px solid violet;
@@ -55,10 +101,42 @@ main div {
     background-color: magenta;
 }
 .review {
+=======
+/**/
+main div {
+    border: 2px solid violet;
+}
+.book-image{
+    background-color: steelblue;
+}
+.info{
+    background-color: magenta;
+}
+.review{
+>>>>>>> 4a6b4949b3b828faab37f1b9cc286bcfe60656c3
     background-color: chocolate;
 }
 
 
+<<<<<<< HEAD
 
 
 
+=======
+/* #review {
+    display: flex;
+}
+.img {
+    width: 200px;
+    height: 400px;
+}
+.contents {
+    display: flex;
+    flex-wrap:wrap;
+}
+.content1,
+.content2,
+.content3 {
+    width: 200px;
+} */
+>>>>>>> 4a6b4949b3b828faab37f1b9cc286bcfe60656c3
