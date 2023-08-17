@@ -53,7 +53,7 @@ main {
 
 /*delete me*/
 main div {
-    border: 2px solid skyblue;
+    border: 2px solid hotpink;
 }
 
 .book-image {
@@ -61,11 +61,11 @@ main div {
 }
 
 .info {
-    background-color: lightgreen;
+    background-color: lightgoldenrodyellow;
 }
 
 .review {
-    background-color: aliceblue;
+    background-color: lightcyan;
     flex-direction: column;
 }
 .img {
