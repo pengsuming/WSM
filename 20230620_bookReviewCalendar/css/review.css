@@ -53,7 +53,7 @@ main {
 
 /*delete me*/
 main div {
-    border: 2px solid beige;
+    border: 2px solid skyblue;
 }
 
 .book-image {
@@ -65,7 +65,7 @@ main div {
 }
 
 .review {
-    background-color: rgb(224, 249, 205);
+    background-color: aliceblue;
     flex-direction: column;
 }
 .img {
