@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container * {
+    border: 2px solid black;
+}
+figure > img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;  /* contain; */
+}
+html {
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr;
+    grid-template-rows: 44px 1fr 80px;
+    grid-template-areas:
+    "header header  header"
+    "side_left  main  side2"
+    "footer footer  footer";
+}
+.header {
+    background-color: chartreuse;
+    grid-area: header;
+}
+.side1 {
+    background-color: coral;
+    grid-area: side_left;
+}
+.main {
+    background-color: cornsilk;
+    grid-area: main;
+}
+.side2 {
+    background-color: darkorange;
+    grid-area: side2;
+    display: none;
+}
+footer {
+    background-color: lemonchiffon;
+    grid-area: footer;
+}
+
