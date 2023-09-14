@@ -11,6 +11,13 @@ main {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+.left,
+.month,
+.right {
+    cursor: pointer;
+}
+
 .weekday.container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -32,6 +39,14 @@ main {
     display: grid;          /* 글자 수평, 수직 가운데로 */
     place-items: center;    /* 글자 수평, 수직 가운데로 */
 }
+/* 
+.date.item:nth-child(7n+2){
+    color: blue;
+}
+
+.date.item:nth-child(7n+3){
+    color: red;
+} */
 
 /* 오늘 포커싱 */
 
