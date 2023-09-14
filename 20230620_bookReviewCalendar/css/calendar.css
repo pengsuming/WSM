@@ -9,7 +9,7 @@ main {
     justify-content: center;
     column-gap: 40px;
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .weekday.container {
     display: grid;
@@ -23,7 +23,6 @@ main {
 .dates.container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    text-align: center;
     font-size: 1.25rem;
     padding: 10px;
 }
@@ -34,10 +33,6 @@ main {
     place-items: center;    /* 글자 수평, 수직 가운데로 */
 }
 
-/* .date.item:nth-child(1) {
-    grid-column-start: 6;   /* 열 ->  */
-    /* background-color: aquamarine; */
-/* } */
 /* 오늘 포커싱 */
 
 .review.flex-container {
@@ -51,6 +46,11 @@ main {
 }
 /* tablet */
 @media screen and (max-width: 720px) {
+    
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
     main {
         margin-top: calc(44px + 40px);
         width: calc(100% - 10px * 2);
@@ -58,9 +58,7 @@ main {
 }
 
 
-
-
-/* delect me */
+/* delete me */
 /* main * {
     border: 2px solid black;
 } */

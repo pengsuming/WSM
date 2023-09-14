@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +10,14 @@
     <link rel="stylesheet" href="css/navstyle.css">
     <link rel="stylesheet" href="css/calendar.css">
 </head>
-
 <body>
     <header>
         <nav class="nav container">
-            <a href="" class="nav-logo"> <!--아이콘-->
+            <a href="" class="nav-logo">
                 <i class="bi bi-book"></i>
             </a>
 
-            <ul class="nav-list"> <!--메뉴-->
+            <ul class="nav-list">
                 <li class="nav-item"><a href="index.html" class="nav-link">책장</a></li>
                 <li class="nav-item"><a href="" class="nav-link">리뷰</a></li>
                 <li class="nav-item"><a href="calendar.html" class="nav-link">캘린더</a></li>
@@ -28,18 +26,19 @@
             <div class="nav-toggle" id="nav_toggle">
                 <i class="bi bi-list"></i>
             </div>
-        </nav> <!--//띄어쓰기로 구분-->
+        </nav>
     </header>
 
     <main id="calendar">
-        <!--title < 9월 > -->
+        <!-- title < 9월 > -->
         <div class="title flex-container">
             <div class="left"><i class="bi bi-caret-left"></i></div>
+            <div class="month"></div>
             <div class="right"><i class="bi bi-caret-right"></i></div>
         </div>
         <!-- calendar 일 월 화 수 ... 토 1 2 3 ... 30 -->
         <div class="calendar flex-container">
-            <!--weekday 일 월 화 ... 토 -->
+            <!-- weekday 일 월 화 ... 토  -->
             <div class="weekday container">
                 <div class="weekday item">일</div>
                 <div class="weekday item">월</div>
@@ -49,7 +48,7 @@
                 <div class="weekday item">금</div>
                 <div class="weekday item">토</div>
             </div>
-            <!--dates 1 2 3 4 5 ... 30 -->
+            <!-- dates 1 2 3 4 5 ... 30 -->
             <div class="dates container">
                 <!-- <div class="date item">1</div>
                 <div class="date item">2</div>
@@ -95,6 +94,4 @@
     <script src="js/data.js"></script>
     <script src="js/calendar.js"></script>
 </body>
-</body>
-
 </html>
